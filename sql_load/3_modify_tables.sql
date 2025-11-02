@@ -60,17 +60,35 @@ SELECT *
 FROM job_postings_fact
 WHERE EXTRACT(MONTH from job_posted_date) = 3
 
--- I want the names of the companies with the most jobs
 
 select * 
 from job_postings_fact
 limit 10
 
-select * from company_dim LIMIT 10
+select * from company_dim LIMIT 10;
 
+
+select job_id, job_title_short, EXTRACT(MONTH from job_posted_date) <= 3 as first_quarter
+from job_postings_fact
+where EXTRACT(MONTH from job_posted_date) <= 3
+
+
+
+
+
+
+
+-- I want the names of the companies with the most jobs
 
 with company_job_count AS (
     select company_id, count(*) as total_jobs
     from job_postings_fact
     GROUP BY company_id
 )
+
+select company_dim.name as company_name, company_job_count.total_jobs
+from company_dim
+left join company_job_count on company_job_count.company_id = company_dim.company_id
+ORDER BY total_jobs desc
+
+
