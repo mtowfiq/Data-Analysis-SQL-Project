@@ -63,7 +63,8 @@ WHERE EXTRACT(MONTH from job_posted_date) = 3
 
 select * 
 from job_postings_fact
-limit 10
+where job_location like '%Dubai%' AND job_title_short = 'Data Analyst'  AND salary_year_avg is not null
+
 
 select * from company_dim LIMIT 10;
 
