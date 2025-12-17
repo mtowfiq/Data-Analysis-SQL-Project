@@ -90,18 +90,18 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skill development.
 
 
-| Skill ID | Skills     | Demand Count | Average Salary ($) |
-|----------|------------|--------------|-------------------:|
-| 8        | go         | 27           |            115,320 |
-| 234      | confluence | 11           |            114,210 |
-| 97       | hadoop     | 22           |            113,193 |
-| 80       | snowflake  | 37           |            112,948 |
-| 74       | azure      | 34           |            111,225 |
-| 77       | bigquery   | 13           |            109,654 |
-| 76       | aws        | 32           |            108,317 |
-| 4        | java       | 17           |            106,906 |
-| 194      | ssis       | 12           |            106,683 |
-| 233      | jira       | 20           |            104,918 |
+|Skills     | Demand Count | Average Salary ($) |
+|-----------|--------------|-------------------:|
+|go         | 27           |            115,320 |
+|confluence | 11           |            114,210 |
+|hadoop     | 22           |            113,193 |
+|snowflake  | 37           |            112,948 |
+|azure      | 34           |            111,225 |
+|bigquery   | 13           |            109,654 |
+|aws        | 32           |            108,317 |
+|java       | 17           |            106,906 |
+|ssis       | 12           |            106,683 |
+|jira       | 20           |            104,918 |
 
 *Table of the most optimal skills for data analyst sorted by salary*
 

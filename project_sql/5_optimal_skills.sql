@@ -32,7 +32,6 @@ WITH skills_demand AS (
 )
 
 SELECT
-    skills_demand.skill_id,
     skills_demand.skills,
     demand_count,
     avg_salary
